@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+}
+
+@font-face {
+    font-family: font1;
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: font2;
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone1: hsl(30, 54%, 90%);
+    --Stone2: hsl(30, 18%, 87%);
+    --Stone3: hsl(30, 10%, 34%);
+    --Stone4: hsl(24, 5%, 18%);
+    --Brown: hsl(14, 45%, 36%);
+    --Rose1: hsl(332, 51%, 32%);
+    --Rose2: hsl(330, 100%, 98%);
+}
+
+body{
+    background-color: var(--Stone1);
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.box{
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 820px;
+    padding: 35px;
+}
+
+h1 , h2{
+    margin: 20px 0 0 0;
+    font-family: "font2";
+    line-height: 1;
+    font-weight: 400;
+}
+
+h2{
+    color: var(--Brown);
+}
+
+p, li{
+    margin: 20px 0 0 0;
+    font-family: "font1";
+    font-weight: 400;
+    color: var(--Stone4);
+}
+
+li{
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+span{
+    font-weight: 600;
+}
+
+.prep{
+    background-color: var(--Rose2);
+    padding: 5px 20px 25px 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+
+    p{
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--Rose1);
+    }
+}
+
+.ingredients{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--Stone2);
+
+    h2{
+        margin-bottom: 10px;
+    }
+
+    li{
+        margin-top: 10px;
+    }
+}
+
+.instructions{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--Stone2);
+
+    h2{
+        margin-bottom: 10px;
+    }
+
+    li::marker{
+        margin-top: 10px;
+        font-weight: bold;
+        color: var(--Brown);
+    }
+}
+
+.nutrition{
+
+    hr{
+        border: none;
+        border-bottom: 1px solid var(--Stone2);
+        outline: none;
+        margin: 10px 0;
+    }
+
+    li{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 160px;
+    }
+
+}
+
+.attribution { 
+    margin-top: 11px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 768px) {
+    .container{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .box{
+        border-radius: 0;
+        width: 100%;
+        padding: 0px ;
+    }
+
+    .box-content{
+        padding: 20px 30px;
+    }
+
+    .box img{
+        border-radius: 0;
+    }
+}
